@@ -1,0 +1,19 @@
+{
+    "name": "Scripts",
+    "rootNamespace": "",
+    "references": [
+        "GUID:3f1212183d0570d4b91c7f6cf8a54b33",
+        "MessagePack.Annotations",
+        "MessagePack",
+        "Unity.TextMeshPro"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
