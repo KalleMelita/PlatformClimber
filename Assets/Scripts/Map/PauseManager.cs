@@ -4,8 +4,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+/// <summary>
+/// Manages the Pause Menue during the Game.
+/// </summary>
 public class PauseManager : MonoBehaviour
-{
+{ 
+    //TODO: probably use Stateless
+
     public static bool GameIsPaused = false;
 
     public GameObject pauseMenuUI;
