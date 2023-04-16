@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Template for Level One.
+/// </summary>
 public class TemplateThreeLOne : BasicTemplate, ITemplate
 {
    private readonly uint elementHeight = 20;

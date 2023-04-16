@@ -2,6 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Starttemplate. This can be used to start the game.
+/// </summary>
 public class TemplateStartOne : BasicTemplate, ITemplate
 {
     private readonly uint elementHeight = 8;
