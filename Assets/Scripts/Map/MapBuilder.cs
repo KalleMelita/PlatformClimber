@@ -150,7 +150,7 @@ public class MapBuilder : MonoBehaviour
         Debug.Log(System.String.Format("Create Template at vertikal Position:{0}.", mapHeight));
         template.generateMap(mapHeight);
         instantiatedTemplates.Add(template);
-        mapHeight = mapHeight + template.getElementHeight();
+        mapHeight = mapHeight + template.GetElementHeight();
 
         return mapHeight;
     }
@@ -163,8 +163,8 @@ public class MapBuilder : MonoBehaviour
     {
         for (int i = instToDestroy.Count - 1; i >= 0; i--)
         {
-            Debug.Log(System.String.Format("Destroy Element at vertikal Position:{0}.", instToDestroy[i].getElementPositionHeight()));
-            instToDestroy[i].destroyAllInstantiables();
+            Debug.Log(System.String.Format("Destroy Element at vertikal Position:{0}.", instToDestroy[i].GetElementPositionHeight()));
+            instToDestroy[i].DestroyAllInstantiables();
             instToDestroy.RemoveAt(i);
         }
     }
@@ -250,7 +250,7 @@ public class MapBuilder : MonoBehaviour
             Debug.Log(System.String.Format("Generate new Map Elements."));
             GenerateTemplates(Templates);
             List<ITemplate> instToDestroy = instantiatedTemplates
-                .FindAll(instantiatedTemplate => instantiatedTemplate.getElementPositionHeight() < (characterHeight - HEIGHT_DESTROING));
+                .FindAll(instantiatedTemplate => instantiatedTemplate.GetElementPositionHeight() < (characterHeight - HEIGHT_DESTROING));
             DestroyTemplates(instToDestroy);
         }
     }

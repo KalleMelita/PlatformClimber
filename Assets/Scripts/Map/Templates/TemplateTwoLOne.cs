@@ -18,12 +18,12 @@ public class TemplateTwoLOne : BasicTemplate, ITemplate
         instantiables.Add(new Instantiable(floorPrefab, new Vector3(0, 27 + height, 0), Quaternion.identity));
     }
 
-    override public uint getElementHeight()
+    override public uint GetElementHeight()
     {
         return elementHeight;
     }
 
-    override public uint getElementPositionHeight()
+    override public uint GetElementPositionHeight()
     {
         return elementPositionHeight;
     }
@@ -32,7 +32,7 @@ public class TemplateTwoLOne : BasicTemplate, ITemplate
     {
         assignPrefab();
         fillInstantiables(height);
-        base.generateMap();
+        base.GenerateMap();
         elementPositionHeight = height + elementHeight;
         return Instantiate(this);
     }

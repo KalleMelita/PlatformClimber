@@ -66,7 +66,7 @@ public class TemplateTest
         foreach (GameObject mapTemplate in mapTemplates)
         {
             ITemplate template = mapTemplate.GetComponent<ITemplate>();
-            instantiables.AddRange(template.getInstantiables());
+            instantiables.AddRange(template.GetInstantiables());
         }
 
         Debug.Log(System.String.Format("Instatiable Size:{0}!", instantiables.Count));

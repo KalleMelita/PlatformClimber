@@ -5,11 +5,11 @@ public interface ITemplate
 {
     ITemplate generateMap(uint height);
 
-    void destroyAllInstantiables();
+    void DestroyAllInstantiables();
 
-    uint getElementHeight();
+    uint GetElementHeight();
 
-    uint getElementPositionHeight();
+    uint GetElementPositionHeight();
 
-    List<Instantiable> getInstantiables();
+    List<Instantiable> GetInstantiables();
 }
