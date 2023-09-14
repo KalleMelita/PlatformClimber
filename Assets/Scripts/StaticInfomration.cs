@@ -16,4 +16,9 @@ public static class StaticInfomration
     /// Player Pref Tag under which the Player Name is stored.
     /// </summary>
     public static string PLAYER_PREF_TAG = "playerPref";
+
+    /// <summary>
+    /// Speed of the Game.
+    /// </summary>
+    public static float GAME_TIME_SPEED = 1.75f;
 }
