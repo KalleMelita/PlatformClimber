@@ -13,7 +13,7 @@ public class FloorTest
     {
         GameObject gameObject = new GameObject();
         CharacterScript character = gameObject.AddComponent<CharacterScript>();
-        character.speed = 1;
+        character.Speed = 1;
         gameObject.AddComponent<Rigidbody2D>();
 
         float deltaTime = 2;

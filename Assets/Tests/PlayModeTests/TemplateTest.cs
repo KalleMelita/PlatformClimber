@@ -116,8 +116,8 @@ public class TemplateTest
             charScript.EarthAcceleration = Physics2D.gravity.y;
             Rigidbody2D rigidBody = characterInst.GetComponent<Rigidbody2D>();
 
-            charScript.setRigidbody(rigidBody);
-            float jumptime = (float)charScript.getJumpTime(StaticInfomration.velocity);
+            charScript.SetRigidbody(rigidBody);
+            float jumptime = (float)charScript.GetJumpTime(StaticInfomration.velocity);
             Debug.Log(System.String.Format("Jump Time:{0}.", jumptime));
 
             //Position Before the Jump. 

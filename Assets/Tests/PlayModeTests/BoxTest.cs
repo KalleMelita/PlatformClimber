@@ -19,8 +19,8 @@ Vector3 positionBox;
         character = Resources.Load<GameObject>("Character");
         CharacterScript charScript = character.GetComponent<CharacterScript>();
         charScript.EarthAcceleration = Physics2D.gravity.y;
-        charScript.setRigidbody(character.GetComponent<Rigidbody2D>());
-        jumptime = (float)charScript.getJumpTime(StaticInfomration.velocity);
+        charScript.SetRigidbody(character.GetComponent<Rigidbody2D>());
+        jumptime = (float)charScript.GetJumpTime(StaticInfomration.velocity);
 
         toTest = Resources.Load<GameObject>("Floor");
         positionBox = new Vector3(0, 0, 0);

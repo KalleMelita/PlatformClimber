@@ -19,7 +19,7 @@ public class CharacterTest
     [Test]
     public void CharacterTestMoveRight()
     {
-        charScript.speed = 1;
+        charScript.Speed = 1;
 
         Vector3 start = new Vector3(0, 0, 0);
         Vector3 movement = new Vector3(1, 0, 0);
@@ -30,7 +30,7 @@ public class CharacterTest
     [Test]
     public void CharacterTestMoveLeft()
     {
-        charScript.speed = 1;
+        charScript.Speed = 1;
 
         Vector3 start = new Vector3(0, 0, 0);
         Vector3 movement = new Vector3(-1, 0, 0);
@@ -41,7 +41,7 @@ public class CharacterTest
     [Test]
     public void CharacterTestMoveTooFarRight()
     {
-        charScript.speed = 1;
+        charScript.Speed = 1;
 
         Vector3 start = new Vector3(4, 0, 0);
         float tooFar = (StaticInfomration.cameraRightCoordinates - 4) * 2;
@@ -53,7 +53,7 @@ public class CharacterTest
     [Test]
     public void CharacterTestMoveTooFarLeft()
     {
-        charScript.speed = 1;
+        charScript.Speed = 1;
 
         Vector3 start = new Vector3(-4, 0, 0);
         float tooFar = (StaticInfomration.cameraLeftCoordinates - 4) * 2;
@@ -75,6 +75,6 @@ public class CharacterTest
         Rigidbody2D testBody = test.GetComponent<Rigidbody2D>();
         testBody.mass = 10;
 
-        Assert.AreEqual(10, charScript.getJumpTime(velocity));
+        Assert.AreEqual(10, charScript.GetJumpTime(velocity));
     }
 }

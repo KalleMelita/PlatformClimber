@@ -7,7 +7,10 @@ public class CharacterScript : MonoBehaviour
 
     Rigidbody2D m_Rigidbody;
 
-    public float speed = 2;
+    /// <summary>
+    /// Player control speed for character.
+    /// </summary>
+    public float Speed = 2;
 
     public float startingVelocity = 2;
 
@@ -22,7 +25,7 @@ public class CharacterScript : MonoBehaviour
 
     public float actualTime = 0;
 
-    public void setRigidbody(Rigidbody2D rigidbody2D)
+    public void SetRigidbody(Rigidbody2D rigidbody2D)
     {
         m_Rigidbody = rigidbody2D;
     }
@@ -31,16 +34,16 @@ public class CharacterScript : MonoBehaviour
     void Start()
     {
         m_Rigidbody = GetComponent<Rigidbody2D>();
-        getGravity();
+        GetGravity();
         Jump(startingVelocity);
     }
 
-    private void getGravity()
+    private void GetGravity()
     {
         earthAcceleration = Physics2D.gravity.y;
     }
 
-    public double getJumpTime(float velocity)
+    public double GetJumpTime(float velocity)
     {
         return -1 * velocity / earthAcceleration;
     }
@@ -66,7 +69,7 @@ public class CharacterScript : MonoBehaviour
 
     public Vector3 computePosition(Vector3 currentPosition, Vector3 movement, float deltaTime)
     {
-        currentPosition += movement * deltaTime * speed;
+        currentPosition += movement * deltaTime * Speed;
         return correctLimitation(currentPosition);
     }
 
